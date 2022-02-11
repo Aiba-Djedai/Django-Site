@@ -1,0 +1,17 @@
+<!-- Мы наследуем все от файла layout.html -->
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1 style="margin-left: 63px;">Главная страница</h1><br> <!--    если мы хотим чтото вывести на экран то используем такие скобки    -->
+    </div>
+    <div class="card">
+        <h3>Сайт со статьями</h3>
+            <div>
+                <img src="https://вебджем.рф/800/600/https/kak-nazyvaetsya.ru/wp-content/uploads/2017/12/kto-takoj-kopirajter.png">
+            </div>
+        <p>Здесь вы найдете очень много интересных статей.</p>
+    </div>
+{% endblock %}

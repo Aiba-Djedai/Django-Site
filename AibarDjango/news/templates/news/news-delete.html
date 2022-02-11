@@ -1,0 +1,14 @@
+<!-- Мы наследуем все от файла layout.html -->
+{% extends 'main/layout.html' %}
+
+{% block title %}Удалить статью{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Удалить статью</h1>
+        <form method="post">
+            {% csrf_token %}
+            <button class="btn btn-success" type="submit">Удалить статью</button>
+        </form>
+    </div>
+{% endblock %}
